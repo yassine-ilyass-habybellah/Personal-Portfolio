@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- css file -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- start animated background -->
+  <div class="anime-container">
+    <div class="bubbles">
+      <span style="--i:10;"></span>
+      <span style="--i:4;"></span>
+      <span style="--i:1;"></span>
+      <span style="--i:9;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:9;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:3;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:4;"></span>
+      <span style="--i:5;"></span>
+      <span style="--i:4;"></span>
+      <span style="--i:1;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:9;"></span>
+      <span style="--i:3;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:4;"></span>
+      <span style="--i:7;"></span>
+      <span style="--i:9;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:8;"></span>
+      <span style="--i:5;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:8;"></span>
+      <span style="--i:7;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:9;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:1;"></span>
+      <span style="--i:6;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:7;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:6;"></span>
+    </div>
+  </div>
+  <!-- end animated background -->
+  <!-- page container -->
+  <div class="landing-page">
+    <!-- start navbar -->
+    <nav class="nav-bar">
+      <ul>
+        <li id="about" class="about active" onclick="activateIt(this)">
+          <a href="#home">
+          <i class="fa-regular fa-user" style="color: #ffffff;"></i>
+          <div class="text">ABOUT</div>
+        </a>
+        </li>
+        <li id="resume" class="resume" onclick="activateIt(this)">
+          <a href="#home">
+            <i class="fa-regular fa-rectangle-list" style="color: #ffffff;"></i>
+            <div class="text">RESUME</div>
+          </a>
+        </li>
+        <li id="works" class="works" onclick="activateIt(this)">
+          <a href="#home">
+            <i class="fa-regular fa-eye" style="color: #ffffff;"></i>
+            <div class="text">WORKS</div>
+          </a>
+        </li>
+        <li id="contact" class="contact" onclick="activateIt(this)">
+          <a href="#home">
+            <i class="fa-regular fa-paper-plane" style="color: #ffffff;"></i>
+            <div class="text">CONTACT</div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end navbar -->
+    <!-- start profile -->
+    <div class="profile">
+      <div class="profile-container">
+        <div class="background"><img src="imgs/sea-gd3c80cf8a_1280.jpg" alt=""></div>
+          <div class="image"><img src="imgs/pexels-italo-melo-2379005.jpg" alt=""></div>
+          <div class="title">Oussama Darrhal</div>
+          <div class="subtitle">Front-end Web Developer</div>
+          <div class="socials">
+            <div class="insta"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="wtsp"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></div>
+            <div class="linkedIn"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div>
+            <div class="github"><a href="#"><i class="fa-brands fa-github"></i></a></div>
+            <div class="twitter"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+        </div>
+        <div class="buttons">
+          <div class="CV"><div>DOWNLOAD CV   </div><i class="fa-solid fa-cloud-arrow-down"
+          style="transition: color .4s ease-in-out, transform 1s ease;"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- end profile -->
+    <!-- start page content -->
+    <div class="about-content-container">
+      <div class="cont-container">
+      <div class="Theabout">
+        <div class="heading">About Me</div>
+        <div class="about-content">
+          <div class="row"><strong>Hello! I’m Oussama Darrhal.</strong>
+          Meet a skillful young freelancer from Morocco who specializes in front-end web development and WordPress,
+          crafting engaging online experiences with a perfect blend of creativity and technical expertise.</div>
+          <div class="infos">
+            <div class="info-row1">
+              <strong>Age</strong> . . . . 18 <br>
+              <strong>Residence</strong> . . . . Morocco</div>
+            <div class="info-row2">
+              <strong>Freelance</strong> . . . . Available <br>
+              <strong>Address</strong> . . . . Casablanca, Morocco</div>
+          </div>
+        </div>
+      </div>
+      <div class="Theservices">
+        <div class="heading">My Services</div>
+        <div class="services-content">
+          <div class="service">
+            <div class="icon"><i class="fa-brands fa-square-js"></i></div>
+            <h4 class="name">Front-end Web Development</h4>
+            <div class="desc">Elevate your online presence with my expertise in front-end web development,
+              where I transform design visions into captivating and user-friendly websites using HTML, CSS, and JavaScript, ensuring a seamless and visually engaging digital experience.</div>
+          </div>
+          <div class="service">
+            <div class="icon"><i class="fa-solid fa-cart-shopping fa-sm"></i></div>
+            <h4 class="name">E-Commerce Website</h4>
+            <div class="desc">Empower your business in the digital realm with my proficiency in crafting E-commerce websites,
+              where I combine cutting-edge technology and user-centric design to create seamless online shopping platforms that maximize engagement and conversions.</div>
+          </div>
+          <div class="service">
+            <div class="icon"><i class="fa-brands fa-wordpress"></i></div>
+            <h4 class="name">WordPress Web Development</h4>
+            <div class="desc">Unlock the potential of your digital identity with my WordPress web development proficiency,
+              crafting dynamic and functional websites that seamlessly merge design and technology,
+              and empower your online presence with the power of custom themes, plugins, and user-centric interfaces.</div>
+          </div>
+          <div class="service">
+            <div class="icon"><i class="fa-solid fa-wrench fa-sm"></i></div>
+            <h4 class="name">WordPress Maintenance</h4>
+            <div class="desc">Ensure the longevity and optimal performance of your WordPress website with my comprehensive WordPress Maintenance services,
+              encompassing regular updates, security enhancements, plugin management, and seamless troubleshooting, allowing you to focus on your content while I handle the technical aspects.</div>
+          </div>
+        </div>
+      </div>
+      <div class="Theoffers">
+        <div class="heading">Offers</div>
+        <div class="offers-content">
+          <div class="offer">
+            <div class="icon">
+            <i class="fa-brands fa-wordpress"></i>
+            </div>
+            <div class="offer-title">WordPress Website Package</div>
+            <ul class="offer-features">
+              <li>Themes Customization</li>
+              <li>Plugin Integration</li>
+              <li>Analytics & Tracking</li>
+              <li>WooCommerce Funcionality</li>
+              <li><strong>Domain & Hosting Included!</strong></li>
+              <li><strong>1 Year Maintenance!</strong></li>
+            </ul>
+          </div>
+          <div class="offer">
+            <div class="icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="offer-title">Dynamic Website Package</div>
+            <ul class="offer-features">
+              <li>Responsive Design</li>
+              <li>Prioritizing User experience</li>
+              <li>Interactive Elements</li>
+              <li>Performance Enhancing</li>
+              <li><strong>Domain & Hosting Included!</strong></li>
+              <li><strong>1 Year Maintenance!</strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="orders">
+        <div class="order1"><div>ORDER NOW!   </div><i class="fa-solid fa-receipt" style="transition: color .1s ease-in-out, transform 1s ease;"></i></div>
+        <div class="order2"><div>ORDER NOW!   </div><i class="fa-solid fa-receipt" style="transition: color .1s ease-in-out, transform 1s ease;"></i></div>
+      </div>
+      </div>
+    </div>
+  </div>
+    <!-- end page content -->
+  </div>
+  <script src="JS/main.js"></script>
+</body>
+</html>
