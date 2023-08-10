@@ -9,4 +9,3 @@ function activateIt(clicked_id) {
   activeNav.classList.remove("active")
   clicked_id.classList.add("active")
 }
-
