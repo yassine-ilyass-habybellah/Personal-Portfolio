@@ -32,6 +32,54 @@ a {
   top: 60px;
   position: relative;
 }
+.card-inside {
+  width: 60%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30px;
+  right: -5px;
+  background-color: var(--background-color);
+  z-index: -1;
+  padding: 25px 30px 25px 55px;
+  overflow: hidden scroll;
+  gap: 70px;
+}
+.fade-in-down {
+  animation: fade-in-down 1200ms forwards ease-in-out;
+}
+.fade-out-up {
+  animation: fade-out-up 1200ms forwards ease-in-out;
+}
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes fade-out-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+.current {
+  opacity: 1;
+  z-index: 0;
+}
+.hidden {
+  opacity: 0;
+  z-index: -10;
+}
 .heading {
   font-size: 23px;
   letter-spacing: -2px;
@@ -61,7 +109,6 @@ a {
   height: 1px;
   background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.374) 0%, rgba(255, 255, 255, 0) 70%);
 }
-
 /* End Global Values */
 /* Start animated background */
 .anime-container {
@@ -70,6 +117,7 @@ a {
   width: 75%;
   height: 100vh;
   overflow: visible;
+  z-index: -40;
 }
 /* for media queries you will need to change margin to 300px and width and height to 10px */
 /* for media queries you will need to change margin to 300px and width and height to 10px */
@@ -359,23 +407,6 @@ li.works:before {
 }
 /* end profile */
 /* start page content */
-.about-content-container {
-  display: flex;
-  position: relative;
-  width: 60%;
-  height: 500px;
-  top: 30px;
-  background-color: var(--background-color);
-  z-index: 0;
-  padding-left: 55px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  overflow: scroll;
-  overflow-x: hidden;
-  padding-right: 30px;
-  flex-direction: column;
-  gap: 70px;
-}
 /* Start About Content */
 .Theabout {
   display: flex;
