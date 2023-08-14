@@ -18,15 +18,19 @@ function activateIt(clicked_id) {
     clicked_id.classList.add("active") // add it to the active currently
     let Currentcard = variables["card" + `${clicked_id.id}`]
     let Previouscard = variables["card" + `${activeNav.id}`]
-    Currentcard.classList.remove("fade-out-up")
     Currentcard.classList.remove("fade-in-down")
-    Currentcard.classList.remove("hidden")
+    Currentcard.classList.remove("fade-out-up")
     if (Currentcard === Previouscard) {
       return
     } else {
+      console.log("Current:",Currentcard)
+      console.log("Previous:", Previouscard)
+      console.log("###############")
+      Currentcard.classList.remove("hidden")
+      Previouscard.classList.remove("current")
       Currentcard.classList.add("fade-in-down")
-      Previouscard.classList.remove("fade-in-down")
       Previouscard.classList.add("fade-out-up")
+      Currentcard.classList.add("current")
       Previouscard.classList.add("hidden")
   }
   const activeElements = document.querySelectorAll(".nav-bar ul .active");
