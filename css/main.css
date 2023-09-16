@@ -32,27 +32,6 @@ a {
   top: 60px;
   position: relative;
 }
-@media (max-width: 1107px) {
-  
-}
-@media (min-width: 1107px) and (max-width: 1170px) {
-  .landing-page {
-    display: flex;
-    width: 93%;
-    margin: 0 72px;
-    top: 60px;
-    position: relative;
-  }
-}
-@media (min-width: 1170px) and (max-width: 1300px) {
-  .landing-page {
-    display: flex;
-    width: 88%;
-    margin: 0 88px;
-    top: 60px;
-    position: relative;
-  }
-}
 .card-inside {
   width: 60%;
   height: 500px;
@@ -626,4 +605,136 @@ li.works:before {
 }
 /* End Offers Content */
 /* End About Content */
-/* end page content */
+/* Start Media Queries */
+@media (max-width: 1107px) {
+  .profile {
+    margin-left: 10px;
+    width: 600px;
+    height: 555px;
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    position: relative;
+    z-index: 1;
+  }
+  .background {
+    width: 638.1px;
+    height: 530px;
+    margin: 0 auto;
+    z-index: 0;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: -2px 29px 44px -12px rgba(0, 0, 0, 0.66);
+  }
+  .background::before {
+    content: '';
+    position: absolute;
+    left: -16px;
+    bottom: 170px;
+    width: 660px;
+    height: 100px;
+    transform: none;
+    -webkit-transform: none;
+    border-radius: 190% 190% 0 0;
+    background-color: var(--background-color);
+    z-index: 0;
+  }
+  .image {
+    width: 150px;
+    margin: -350px 0 0 170px;
+    position: relative;
+    z-index: 1;  display: flex;
+    left: 80px;
+  }
+  .subtitle {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 10px 0px;
+    z-index: 4;
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--main-color);
+    word-spacing: -3px;
+    white-space: nowrap;
+    width: 638px;
+  }
+  .title {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    z-index: 4;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: -2px;
+    word-spacing: -5px;
+    width: 638px;
+  }
+  .socials {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 34%;
+    top: 20px;
+    left: 37%;
+    z-index: 4;
+    margin-top: 25px;
+  }
+  .profile::after {
+    content: '';
+    width: 630px;
+    height: 584px;
+    border-radius: 5px;
+    position: absolute;
+    background: var(--second-color);
+    top: -15px;
+    left: -15px;
+    z-index: -1;
+  }
+  .landing-page {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nav-bar {
+    width: 70px;
+    height: 200px;
+    position: absolute;
+    top: 30px;
+    left: -80px;
+    z-index: 2;
+    transform: translateY(35%);
+  }
+  .card-inside {
+    right: -5px;
+    right: -11px;
+    position: relative !important;
+  }
+  .hidden {
+    opacity: 1;
+  }
+}
+@media (min-width: 1107px) and (max-width: 1170px) {
+  .landing-page {
+    display: flex;
+    width: 93%;
+    margin: 0 72px;
+    top: 60px;
+    position: relative;
+  }
+}
+@media (min-width: 1170px) and (max-width: 1300px) {
+  .landing-page {
+    display: flex;
+    width: 88%;
+    margin: 0 88px;
+    top: 60px;
+    position: relative;
+  }
+}
+/* End Media Queries */
+/* End Page Content */
