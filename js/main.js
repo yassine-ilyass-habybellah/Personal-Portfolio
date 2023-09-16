@@ -1,4 +1,3 @@
-
 let about = document.getElementById("about")
 let resume = document.getElementById("resume")
 let works = document.getElementById("works")
