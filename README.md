@@ -1,2 +1,2 @@
 # Personal-Portfolio
-This is My Personal WebSite Portfolio!!
+This is My Personal Website Portfolio!!
