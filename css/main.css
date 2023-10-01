@@ -504,6 +504,7 @@ li.works:before {
   justify-content: center;
   font-size: 30px;
   color: var(--main-color);
+  margin: 15px 0;
 }
 .desc {
   color: var(--light-font);
@@ -609,7 +610,7 @@ li.works:before {
 @media (max-width: 1107px) {
   .profile {
     margin-left: 10px;
-    width: 600px;
+    width: 100%;
     height: 555px;
     border-radius: var(--border-radius);
     background-color: var(--background-color);
@@ -617,7 +618,7 @@ li.works:before {
     z-index: 1;
   }
   .background {
-    width: 638.1px;
+    width: 100%;
     height: 530px;
     margin: 0 auto;
     z-index: 0;
@@ -629,9 +630,9 @@ li.works:before {
   .background::before {
     content: '';
     position: absolute;
-    left: -16px;
+    left: -50px;
     bottom: 170px;
-    width: 660px;
+    width: 120%;
     height: 100px;
     transform: none;
     -webkit-transform: none;
@@ -641,10 +642,11 @@ li.works:before {
   }
   .image {
     width: 150px;
-    margin: -350px 0 0 170px;
+    margin: -175px auto;
     position: relative;
     z-index: 1;  display: flex;
-    left: 80px;
+    left: 0;
+    top: -190px;
   }
   .subtitle {
     display: flex;
@@ -657,7 +659,7 @@ li.works:before {
     color: var(--main-color);
     word-spacing: -3px;
     white-space: nowrap;
-    width: 638px;
+    width: 100%;
   }
   .title {
     position: relative;
@@ -668,7 +670,7 @@ li.works:before {
     font-size: 27px;
     letter-spacing: -2px;
     word-spacing: -5px;
-    width: 638px;
+    width: 100%;
   }
   .socials {
     display: flex;
@@ -676,13 +678,13 @@ li.works:before {
     justify-content: space-between;
     width: 34%;
     top: 20px;
-    left: 37%;
+    left: 33%;
     z-index: 4;
     margin-top: 25px;
   }
   .profile::after {
     content: '';
-    width: 630px;
+    width: 100%;
     height: 584px;
     border-radius: 5px;
     position: absolute;
@@ -693,8 +695,8 @@ li.works:before {
   }
   .landing-page {
     display: flex;
-    width: 50%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 0 90px;
     top: 20px;
     position: relative;
     flex-direction: column;
@@ -710,12 +712,42 @@ li.works:before {
     transform: translateY(35%);
   }
   .card-inside {
-    right: -5px;
+    width: 100%;
     right: -11px;
     position: relative !important;
+    height: fit-content;
+    padding: 25px 30px 25px 35px;
   }
   .hidden {
     opacity: 1;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 55px;
+    background-color: var(--background-color);
+    gap: 15px;
+    font-size: 13px;
+    position: relative;
+    top: 80px;
+    border-radius: 0 0 5px 5px;
+  }
+  .Theabout {
+    height: fit-content;
+  }
+  .Theoffers {
+    height: fit-content;
+  }
+  .offer {
+    height: fit-content;
+    margin: 10px 0;
+    }
+  .offers-content {
+    height: fit-content;
+  }
+  .orders {
+    width: 66%;
   }
 }
 @media (min-width: 1107px) and (max-width: 1170px) {
