@@ -746,6 +746,7 @@ li.works:before {
     }
   .offers-content {
     height: fit-content;
+    width: 68vw;
   }
   .orders {
     width: 50vw;
@@ -822,6 +823,10 @@ li.works:before {
 .orders {
   width: 60vw;
 }
+.offers-content {
+  margin-left: -5vw;
+  width: 76vw;
+  }
 }
 /* End Media Queries */
 /* End Page Content */
