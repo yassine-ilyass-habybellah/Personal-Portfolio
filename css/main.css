@@ -470,7 +470,7 @@ li.works:before {
   background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.374) 0%, rgba(255, 255, 255, 0) 70%);
 }
 .service {
-  padding: 30px 3vw;
+  padding: 30px 4.4vw;
   text-align: left;
   position: relative;
   width: 100%;
