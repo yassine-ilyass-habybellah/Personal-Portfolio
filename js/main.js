@@ -1,7 +1,7 @@
-let about = document.getElementById("about")
-let resume = document.getElementById("resume")
-let works = document.getElementById("works")
-let contact = document.getElementById("contact")
+let about = document.getElementById("about-section")
+let resume = document.getElementById("resume-section")
+let works = document.getElementById("works-section")
+let contact = document.getElementById("contact-section")
 let variables = {
   cardabout: document.querySelector(".about-content-container"),
   cardresume: document.querySelector(".resume-content-container"),

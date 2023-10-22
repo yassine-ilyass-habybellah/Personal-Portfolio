@@ -1,4 +1,7 @@
 /* Start Global Values */
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --main-color:#a57af7;
   --second-color: linear-gradient(135deg, rgba(165,122,247,0.4) 0%, rgba(165,122,247,0.1) 100%);
