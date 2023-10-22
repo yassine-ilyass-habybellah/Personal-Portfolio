@@ -18,7 +18,11 @@ function activateIt(clicked_id) {
   // Make the active section colored
     const currentWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     const maxWidth = 1107
-    if (currentWidth >= maxWidth) {
+    let exceptionName = clicked_id.className
+    if (exceptionName == "order1" || exceptionName == "order2") {
+      console.log("working")
+    }
+    else if (currentWidth >= maxWidth) {
       aboutButton.setAttribute('href', '#');
       resumeButton.setAttribute('href', '#');
       worksButton.setAttribute('href', '#');
@@ -50,9 +54,11 @@ function activateIt(clicked_id) {
       return
     }
   } else if (currentWidth < maxWidth) {
-    // aboutButton.setAttribute('href', '#about-section');
-    // resumeButton.setAttribute('href', '#resume-section');
-    // worksButton.setAttribute('href', '#works-section');
-    // contactButton.setAttribute('href', '#works-section');
+    aboutButton.setAttribute('href', '#about-section');
+    resumeButton.setAttribute('href', '#resume-section');
+    worksButton.setAttribute('href', '#works-section');
+    contactButton.setAttribute('href', '#works-section');
+    // for the problem in which all the the other cards (resume, works, contact) disseppear when you change to the phone screen:
+    // you should remove the hidden attribute and also add any necessary attribute for the cards to appears
   }
 }
