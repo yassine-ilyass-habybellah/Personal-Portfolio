@@ -15,37 +15,37 @@ let worksButton = document.getElementById('works-button');
 let contactButton = document.getElementById('contact-button');
 
 function activateIt(clicked_id) {
-  // Make the active section colored
-    const currentWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    const maxWidth = 1107
-    let exceptionName = clicked_id.className
-    if (exceptionName == "order1" || exceptionName == "order2") {
-      console.log("working")
-    }
-    else if (currentWidth >= maxWidth) {
-      aboutButton.setAttribute('href', '#');
-      resumeButton.setAttribute('href', '#');
-      worksButton.setAttribute('href', '#');
-      contactButton.setAttribute('href', '#');
+  const currentWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  const maxWidth = 1107
+  let exceptionName = clicked_id.className
+  if (exceptionName == "order1" || exceptionName == "order2") {
+    console.log("working")
+  }
+  else if (currentWidth >= maxWidth) {
+    aboutButton.setAttribute('href', '#');
+    resumeButton.setAttribute('href', '#');
+    worksButton.setAttribute('href', '#');
+    contactButton.setAttribute('href', '#');
+    // Make the active section colored
       let activeNav = document.querySelector(".nav-bar ul .active") // check for the previous active nav
       activeNav.classList.remove("active") // remove the class
       clicked_id.classList.add("active") // add it to the active currently
-      let Currentcard = variables["card" + `${clicked_id.id}`]
-      let Previouscard = variables["card" + `${activeNav.id}`]
-      Currentcard.classList.remove("fade-in-down")
-      Currentcard.classList.remove("fade-out-up")
-      if (Currentcard === Previouscard) {
+      let CurrentCard = variables["card" + `${clicked_id.id}`]
+      let PreviousCard = variables["card" + `${activeNav.id}`]
+      CurrentCard.classList.remove("fade-in-down")
+      CurrentCard.classList.remove("fade-out-up")
+      if (CurrentCard === PreviousCard) {
         return
       } else {
-        console.log("Current:",Currentcard)
-        console.log("Previous:", Previouscard)
+        console.log("Current:",CurrentCard)
+        console.log("Previous:", PreviousCard)
         console.log("###############")
-        Currentcard.classList.remove("hidden")
-        Previouscard.classList.remove("current")
-        Currentcard.classList.add("fade-in-down")
-        Previouscard.classList.add("fade-out-up")
-        Currentcard.classList.add("current")
-        Previouscard.classList.add("hidden")
+        CurrentCard.classList.remove("hidden")
+        PreviousCard.classList.remove("current")
+        CurrentCard.classList.add("fade-in-down")
+        PreviousCard.classList.add("fade-out-up")
+        CurrentCard.classList.add("current")
+        PreviousCard.classList.add("hidden")
     }
     const activeElements = document.querySelectorAll(".nav-bar ul .active");
     if (activeElements.length === 0) {
@@ -57,8 +57,11 @@ function activateIt(clicked_id) {
     aboutButton.setAttribute('href', '#about-section');
     resumeButton.setAttribute('href', '#resume-section');
     worksButton.setAttribute('href', '#works-section');
-    contactButton.setAttribute('href', '#works-section');
-    // for the problem in which all the the other cards (resume, works, contact) disseppear when you change to the phone screen:
-    // you should remove the hidden attribute and also add any necessary attribute for the cards to appears
+    contactButton.setAttribute('href', '#contact-section');
+    let activeNav = document.querySelector(".nav-bar ul .active") // check for the previous active nav
+    activeNav.classList.remove("active") // remove the class
+    clicked_id.classList.add("active") // add it to the active currently
+    let CurrentCard = variables["card" + `${clicked_id.id}`]
+    CurrentCard.classList.remove("fade-out-up")
   }
 }
