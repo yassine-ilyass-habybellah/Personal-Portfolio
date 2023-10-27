@@ -13,13 +13,30 @@ let aboutButton = document.getElementById('about-button');
 let resumeButton = document.getElementById('resume-button');
 let worksButton = document.getElementById('works-button');
 let contactButton = document.getElementById('contact-button');
+let orderButton = document.getElementById("order-button")
 
 function activateIt(clicked_id) {
   const currentWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   const maxWidth = 1107
   let exceptionName = clicked_id.className
-  if (exceptionName == "order1" || exceptionName == "order2") {
-    console.log("working")
+  if ((exceptionName == "order1" || exceptionName == "order2") && currentWidth >= maxWidth) {
+    orderButton.setAttribute('href', '#');
+    let activeNav = document.querySelector(".nav-bar ul .active") // check for the previous active nav
+    activeNav.classList.remove("active") // remove the class
+    document.getElementById("contact").classList.add("active") // add it to the active currently
+    let CurrentCard = variables["cardcontact"]
+    let PreviousCard = variables["card" + `${activeNav.id}`]
+    CurrentCard.classList.remove("fade-in-down")
+    CurrentCard.classList.remove("fade-out-up")
+    console.log("Current:",CurrentCard)
+    console.log("Previous:", PreviousCard)
+    console.log("###############")
+    CurrentCard.classList.remove("hidden")
+    PreviousCard.classList.remove("current")
+    CurrentCard.classList.add("fade-in-down")
+    PreviousCard.classList.add("fade-out-up")
+    CurrentCard.classList.add("current")
+    PreviousCard.classList.add("hidden")
   }
   else if (currentWidth >= maxWidth) {
     aboutButton.setAttribute('href', '#');
