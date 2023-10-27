@@ -50,10 +50,10 @@ a {
   gap: 70px;
 }
 .fade-in-down {
-  animation: fade-in-down 1200ms forwards ease-in-out;
+  animation: fade-in-down 850ms forwards ease-in-out;
 }
 .fade-out-up {
-  animation: fade-out-up 1200ms forwards ease-in-out;
+  animation: fade-out-up 850ms forwards ease-in-out;
 }
 @keyframes fade-in-down {
   0% {
@@ -189,9 +189,13 @@ ul {
 }
 li.active a i {
   color: var(--main-color) !important;
+  transition: color 0.5s ease-in-out;
+
 }
 li.active a div {
   color: var(--main-color) !important;
+  transition: color 0.5s ease-in-out;
+
 }
 li.contact:hover a i,
 li.resume:hover a i,
@@ -466,14 +470,14 @@ li.works:before {
 .services-content::after {
   content: '';
   position: absolute;
-  left: 48.3%;
+  left: 46.3%;
   bottom: 0px;
   height: 100%;
   width: 1px;
   background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.374) 0%, rgba(255, 255, 255, 0) 70%);
 }
 .service {
-  padding: 30px 4.4vw;
+  padding: 30px 1vw;
   text-align: left;
   position: relative;
   width: 100%;
@@ -493,7 +497,7 @@ li.works:before {
   background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.374) 0%, rgba(255, 255, 255, 0) 70%);
 }
 .services-content > :nth-child(2)::after {
-  left: 0px;
+  left: -5px;
   width: 100%;
 }
 .icon {
@@ -719,7 +723,7 @@ li.works:before {
     width: 100%;
     right: 0px;
     position: relative !important;
-    height: fit-content;
+    height: 1000px;
     padding: 25px 30px 25px 35px;
   }
   .hidden {

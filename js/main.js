@@ -82,3 +82,27 @@ function activateIt(clicked_id) {
     CurrentCard.classList.remove("fade-out-up")
   }
 }
+
+window.addEventListener("scroll", () => {
+  let scroll = window.scrollY
+  if (scroll >= 642 && scroll <= 1660) {
+    let activeNav = document.querySelector(".nav-bar ul .active") // check for the previous active nav
+    activeNav.classList.remove("active") // remove the class
+    document.querySelector(".nav-bar ul #about").classList.add("active") // add it to the active currently
+  }
+  else if (scroll >= 1660 && scroll <= 2682) {
+    let activeNav = document.querySelector(".nav-bar ul .active") // check for the previous active nav
+    activeNav.classList.remove("active") // remove the class
+    document.querySelector(".nav-bar ul #resume").classList.add("active") // add it to the active currently
+  }
+  else if (scroll >= 2682 && scroll <= 3701) {
+    let activeNav = document.querySelector(".nav-bar ul .active") // check for the previous active nav
+    activeNav.classList.remove("active") // remove the class
+    document.querySelector(".nav-bar ul #works").classList.add("active") // add it to the active currently
+  }
+  else if (scroll >= 3701) {
+    let activeNav = document.querySelector(".nav-bar ul .active") // check for the previous active nav
+    activeNav.classList.remove("active") // remove the class
+    document.querySelector(".nav-bar ul #contact").classList.add("active") // add it to the active currently
+  }
+})
